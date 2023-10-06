@@ -1,0 +1,36 @@
+GET http://localhost:3001/products
+
+###
+
+GET http://localhost:3001/products/16
+
+###
+
+POST http://localhost:3001/products
+Content-Type: application/json
+
+{
+        "image": "https://i.pinimg.com/originals/98/e6/31/98e6316684fb3bb9ed70739c11f96f7b.jpg",
+        "name": "action figure 1",
+        "price": 15000,
+        "rating": 5.5,
+        "img1" :"https://i.pinimg.com/originals/4d/3e/10/4d3e10bd0e8e6784f7b89675439c40ad.jpg",
+        "img2" :"https://i.pinimg.com/originals/4d/3e/10/4d3e10bd0e8e6784f7b89675439c40ad.jpg",
+        "img3" :"https://i.pinimg.com/originals/4d/3e/10/4d3e10bd0e8e6784f7b89675439c40ad.jpg",
+        "deskripsi" : "<ul class='text-start fs-5'><li> This photo is a sample photo, the action figure sent will be  more or less like in the photo</li> <li class='my-3'> Could be bigger, could be smaller depending on the existing stock </li> <li>Stock can suddenly empty</li> </ul>",
+        "kategori" : "movie"
+    
+} 
+
+###
+PATCH http://localhost:3001/products/1
+Content-Type: application/json
+
+{
+    "title": "product updated",
+    "price": 123
+}
+
+
+###
+DELETE http://localhost:3001/products/15
